@@ -1,0 +1,15 @@
+body {
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+}
+
+.blockquote {
+  /* text-align: right; */
+  /* line-height: 20px; */
+  display: flex;
+}
+.blockquote > p {
+  padding-bottom: 15px;
+}

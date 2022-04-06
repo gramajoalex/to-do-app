@@ -1,0 +1,55 @@
+body {
+  padding: 40px;
+}
+input {
+  margin-bottom: 10px;
+}
+
+.alert-container {
+  position: fixed;
+  display: none;
+  bottom: 40px;
+  right: 15px;
+  width: 200px;
+  height: 0px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+  margin: 0;
+  transition: all 400ms;
+}
+
+.alert {
+  width: 100%;
+  height: min-content;
+}
+.alert > p {
+  margin-bottom: 0;
+}
+.cancel {
+  position: absolute;
+  z-index: 99;
+  bottom: 15px;
+  right: 5px;
+  color: black;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.cancel::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  background-color: rgb(110, 110, 110);
+  transform: rotateZ(-40deg) translateX(-13px) translateY(0px);
+}
+.cancel::after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  background-color: rgb(102, 102, 102);
+  transform: rotateZ(40deg) translateX(-2px) translateY(13px);
+}
